@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /*  the specifity of this selector 1 */
+        h1 {
+            color: red;
+
+        }
+
+        /*  the specifity of this selector 10 */
+        #red {
+            color: aqua;
+
+        }
+
+        /*  the specifity of this selector 10+1 */
+
+        .blue {
+            color: blanchedalmond;
+        }
+
+        /*  the specifity of this selector 10 */
+        .black {
+            color: yellow;
+        }
+
+        /*this is example of attribute selector
+           [data-x="a"]{
+            background-color: aqua;
+           }  */
+    </style>
 </head>
+
 <body>
-    <p>my Name Is Naveen Rathore</p>
+    <div>
+        <h1 class="red,blue,black" data-x="a">CSS SPECIFICITY</h1>
+    </div>
 </body>
+
 </html>
